@@ -4,7 +4,7 @@ Python+OpenCVで対象画像内に検索画像が存在する確認して該当�
 
 # DEMO
 ```bash
-python Confirm_with_image.py query.jpg train.jpg, checkpoint.jpg
+python Confirm_with_image.py query.jpg train.jpg checkpoint.jpg
 ```
 
 * __query.jpg：検索画像__
