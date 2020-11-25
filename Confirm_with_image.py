@@ -69,7 +69,7 @@ if __name__ == '__main__':
 
         # 訓練画像は後でも使うのでコピーを使用
         train2 = train.copy()
-        # 射影変換で求めたマッチング領域を短形で囲む
+        # 射影変換で求めたマッチング領域を矩形で囲む
         # inlinersが少ないと正しく矩形描画されない
         train2 = cv2.polylines(train2, [np.int32(dst)], True, 255, 3, cv2.LINE_AA)
     else:
