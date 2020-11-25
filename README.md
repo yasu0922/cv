@@ -8,12 +8,20 @@ python Confirm_with_image.py query.jpg train.jpg, checkpoint.jpg
 ```
 
 * __query.jpg：検索画像__
+
 ![query](https://user-images.githubusercontent.com/29660278/100187053-9af7e000-2f2a-11eb-88e6-6ddc0bbb8e1e.jpg)
+
 * __train.jpg：検索対象が含まれる画像__
+
 ![train](https://user-images.githubusercontent.com/29660278/100186982-77349a00-2f2a-11eb-9f66-3d772139afda.jpg)
+
 * __checkpoint.jpg：最終的に確認したい箇所の画像__
 
 ![checkpoint](https://user-images.githubusercontent.com/29660278/100187094-ac40ec80-2f2a-11eb-9487-0ab915df1e8c.jpg)
+
+* 実行結果
+
+![result](https://user-images.githubusercontent.com/29660278/100189400-94b83280-2f2f-11eb-911f-938ec057ceba.jpg)
 
 # Instllation
 ## python
