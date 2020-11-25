@@ -12,6 +12,7 @@ python Confirm_with_image.py query.jpg train.jpg, checkpoint.jpg
 * train.jpg：検索対象が含まれる画像
 ![train](https://user-images.githubusercontent.com/29660278/100186982-77349a00-2f2a-11eb-9f66-3d772139afda.jpg)
 * checkpoint.jpg：最終的に確認したい箇所の画像
+
 ![checkpoint](https://user-images.githubusercontent.com/29660278/100187094-ac40ec80-2f2a-11eb-9487-0ab915df1e8c.jpg)
 
 # Instllation
