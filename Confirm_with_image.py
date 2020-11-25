@@ -63,14 +63,14 @@ if __name__ == '__main__':
     # ratio testでデータを間引く
     good = runRatioTest(matches, 0.7)
 
-    # MIN_MATCH_COUNT以上のマッチング数があったら射影変換して該当箇所を短形で囲む
+    # MIN_MATCH_COUNT以上のマッチング数があったら射影変換して該当箇所を矩形で囲む
     if len(good) > MIN_MATCH_COUNT:
         dst, matchesMask = Transform(h, w, query_kp, train_kp, good)
 
         # 訓練画像は後でも使うのでコピーを使用
         train2 = train.copy()
         # 射影変換で求めたマッチング領域を短形で囲む
-        # inlinersが少ないと正しく短形描画されない
+        # inlinersが少ないと正しく矩形描画されない
         train2 = cv2.polylines(train2, [np.int32(dst)], True, 255, 3, cv2.LINE_AA)
     else:
         print('十分なマッチングが得られませんでした - %d/%d' % (len(good), MIN_MATCH_COUNT))
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     # ratio testでデータを間引く
     good = runRatioTest(matches, 0.7)
 
-    # MIN_MATCH_COUNT以上のマッチング数があったら射影変換して該当箇所を短形で囲む
+    # MIN_MATCH_COUNT以上のマッチング数があったら射影変換して該当箇所を矩形で囲む
     if len(good) > MIN_MATCH_COUNT:
         dst, matchesMask = Transform(h, w, img_checked_kp, img_warp_kp, good)
 
