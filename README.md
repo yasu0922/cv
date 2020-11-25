@@ -7,11 +7,11 @@ Python+OpenCVで対象画像内に検索画像が存在する確認して該当�
 python Confirm_with_image.py query.jpg train.jpg, checkpoint.jpg
 ```
 
-* query.jpg：検索画像
+* __query.jpg：検索画像__
 ![query](https://user-images.githubusercontent.com/29660278/100187053-9af7e000-2f2a-11eb-88e6-6ddc0bbb8e1e.jpg)
-* train.jpg：検索対象が含まれる画像
+* __train.jpg：検索対象が含まれる画像__
 ![train](https://user-images.githubusercontent.com/29660278/100186982-77349a00-2f2a-11eb-9f66-3d772139afda.jpg)
-* checkpoint.jpg：最終的に確認したい箇所の画像
+* __checkpoint.jpg：最終的に確認したい箇所の画像__
 
 ![checkpoint](https://user-images.githubusercontent.com/29660278/100187094-ac40ec80-2f2a-11eb-9487-0ab915df1e8c.jpg)
 
