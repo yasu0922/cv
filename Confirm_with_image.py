@@ -145,11 +145,13 @@ if __name__ == '__main__':
 
     img_result = cv2.drawMatches(img_checked, img_checked_kp, img_warp, img_warp_kp, good, None, **draw_params)
 
+    # 画像を元のサイズに縮小する
     img_result = cv2.resize(img_result, None, interpolation=cv2.INTER_LINEAR, fx=0.5, fy=0.5)
-    print(img_result.shape[:2])
 
     # 画面に出力
     cv2.imshow('matche - 3', img_result)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     cv2.waitKey(1)
+
+    cv2.imwrite('result.jpg', img_result)
